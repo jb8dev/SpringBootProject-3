@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<!-- CSS only -->
+<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+	
+	
+
+</head>
+<body>
+	<div class="container-fluid">
+		<table border="0"  class="table-bordered" width="100%" height="100%" cellpadding="0" align="center">
+
+			<tr>
+				<td align="center" valign="middle">
+					<table class="table-bordered" >
+					<form action="#" th:action="@{/login}" th:object="${user}" method="post" class="form-control">
+
+							<tr><td height="25" colspan="2" align="left" valign="middle">
+									<div align="center">
+										<strong>Login</strong>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Username</td>
+								<td><input type="text" th:field="*{username}" class="form-control"></td>
+							</tr>
+			<tr>
+			<td>Password</td>
+			<td><input type="text" th:field="*{password}" class="form-control"></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<button type="submit" class="btn btn-info">Submit</button>
+				</td>
+			</tr>
+			</form>
+		</table>
+		</td>
+		</tr>
+		</table>
+	</div>
+</body>
+</html>
